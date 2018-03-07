@@ -56,9 +56,9 @@ public class CategoryController {
 
     @RequestMapping(value = "/find", method = RequestMethod.GET)
     public ResponseEntity<List<Category>> getByName(@RequestParam("keyword") String keyword) {
-        List<Category> categoriesByName = categoryService.getByKeyword(keyword);
+        List<Category> categoriesByKeyword = categoryService.getByKeyword(keyword);
 
-        return new ResponseEntity<>(categoriesByName, HttpStatus.OK);
+        return new ResponseEntity<>(categoriesByKeyword, HttpStatus.OK);
     }
 
 }

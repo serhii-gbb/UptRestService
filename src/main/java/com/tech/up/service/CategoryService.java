@@ -49,7 +49,10 @@ public class CategoryService {
 
     @Transactional
     public List<Category> getByKeyword(String keyword) {
-        return categoryDao.findByKeyword(keyword);
+        List<Category> byKeyword = categoryDao.findByKeyword(keyword);
+        if (byKeyword.isEmpty()) throw new NoSuchElementException("No matches found!");
+
+        return byKeyword;
     }
 
 
