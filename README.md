@@ -13,7 +13,10 @@
 - **`create:`** /product/add 
 -- example json body: {"name": "your name","price":"0", "description":"descr","category": {"id":"0"}}
 - **`read:`** /product/id (id - id of your product in database)
-- **`update:`** /category/update
+- **`update:`** /product/update
 -- example json body: the same as **`create`**
 - **`delete:`** /product/delete/id (id - id of your product in database)
 
+
+I used ResponseEntityExceptionHandler for simple validation (existing) values from database! He handle
+only one Exception (NoSuchElementException.class) and display message for a client. 
