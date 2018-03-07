@@ -16,7 +16,7 @@
 - **`read:`****`Http method GET`** /product/id (id - id of your product in database)
 - **`update:`****`Http method PUT`** /product/update
 -- example json body: {"id":"0", "name": "your name","price":"0", "description":"descr","category": {"id":"0"}}
-- **`delete:`****`Http method GET`** /product/delete/id (id - id of your product in database)
+- **`delete:`****`Http method DELETE`** /product/delete/id (id - id of your product in database)
 
 
 I used ResponseEntityExceptionHandler for simple validation (existing) values from database! He handle
