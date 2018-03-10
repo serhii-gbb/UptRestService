@@ -1,13 +1,11 @@
 package com.tech.up.service;
 
 import com.tech.up.dao.ProductDao;
-import com.tech.up.entity.Category;
 import com.tech.up.entity.Product;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @Service
 public class ProductService {
